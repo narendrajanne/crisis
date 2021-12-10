@@ -1,0 +1,1578 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#"
+     xml:base="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:crisis="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#example -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#example">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#scope -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#scope">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2000/01/rdf-schema#isDefinedBy"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#caused_by_disaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#caused_by_disaster">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#caused_by_disaster"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#causes_disaster_impact"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Caused_by_disaster</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#caused_by_incident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#caused_by_incident">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#causes_incident_impact"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#causes_disaster_impact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#causes_disaster_impact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#causes_incident_impact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#causes_incident_impact">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#characterized_by_parameter_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#characterized_by_parameter_type">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#characterizes_disaster_type"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#characterizes_disaster_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#characterizes_disaster_type">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#contained_in_dataset -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#contained_in_dataset">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#contains_detection"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Dataset"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Detection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#contains_detection -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#contains_detection">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Detection"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Dataset"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#derived_from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#derived_from">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detects_incident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detects_incident">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_detected_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Detection"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_disaster_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_disaster_location">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#is_location_of_disaster"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_incident_end -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_incident_end">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_incident_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_incident_location">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#is_location_of_incident"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_incident_start -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_incident_start">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_detected_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_detected_by"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#is_location_of_disaster -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#is_location_of_disaster"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#is_location_of_incident -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#is_location_of_incident"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_end -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_end"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_risk -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_risk"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_start">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#detection_timestamp"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#disaster_end -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#disaster_end">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Report"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#disaster_start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#disaster_start">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Report"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_latitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_longitude">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_measurement_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_measurement_timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_media_item_timestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_media_item_timestamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_end -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_end"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_priority"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_start -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_start"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_status -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_mission_status"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_radius -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_radius"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_raw_media_source -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_raw_media_source"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_report_ID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_report_ID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_unit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_unit"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_value -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#has_value"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_priority -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_priority">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_severity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#incident_severity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#name"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#notation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#notation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Agriculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Agriculture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Living_Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Asset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Audio_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Audio_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Media_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Car -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Car">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents the actual manifestation of a climate parameter measurement.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Climate_Parameter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Represents various types of climate-related parameters.</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Climate_Parameter_Type</rdfs:label>
+        <rdfs:seeAlso rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Temperature, humidity, etc.</rdfs:seeAlso>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Collection">
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A meaningful collection of concepts.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Labelled collections can be used where you would like a set of concepts to be displayed under a &apos;node label&apos; in the hierarchy.</rdfs:isDefinedBy>
+        <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">core</rdfs:isDefinedBy>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Collection</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Concept"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Concept_Scheme -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Concept_Scheme"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Data_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Data_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Dataset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Dataset"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Detection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Detection"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Dunes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Dunes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Educational_Facility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Educational_Facility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Electric_Energy_Supply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Electric_Energy_Supply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Energy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Fire_Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Fire_Department">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Garbage_Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Garbage_Collection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Hospital -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Hospital">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Human -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Human">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Living_Being"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Image_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Image_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Image_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Image_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Media_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident">
+        <rdfs:isDefinedBy>
+            <rdf:Description rdf:nodeID="genid1">
+                <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-17"/>
+                <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-23"/>
+                <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-05-21"/>
+                <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-11"/>
+                <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-22"/>
+            </rdf:Description>
+        </rdfs:isDefinedBy>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Report -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Report"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Levee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Levee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Livestock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Livestock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Living_Being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Living_Being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Media_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Media_Item"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Mission -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Mission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Monument -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Monument">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Habitat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Habitat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ordered_Collection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ordered_Collection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Collection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Plant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Police -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Police">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Property">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Public_Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Public_Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Responder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Responder"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#River -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#River">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Ecological_Asset"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Sensor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Sewer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Sewer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Square -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Square">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Street -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Street">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Subway -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Subway">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Public_Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Task -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Task"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Text_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Text_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Text_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Text_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Media_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Transportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Transportation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Video_Analysis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Video_Analysis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Task"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Video_Item -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Video_Item">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Media_Item"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vulnerable_Object"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Wall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Wall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Water_Supply -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Water_Supply">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Transportation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Wildlife -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Wildlife">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Animal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#motorcycle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#motorcycle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#List -->
+
+    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Air_pressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Air_pressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Air_temperature_Precipitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Air_temperature_Precipitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#American_Airlines_Flight_191 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#American_Airlines_Flight_191">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#American_Airlines_Flight_587_Queens -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#American_Airlines_Flight_587_Queens">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Antarctica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Antarctica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Antarctica"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Australia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Australia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Australia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Canada -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Canada">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Canada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Canada_by_death_toll -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Canada_by_death_toll">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Canada_by_death_toll"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Charkhi_Dadri_mid-air_collision -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Charkhi_Dadri_mid-air_collision">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Croatia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Croatia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Croatia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Drought -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Drought">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Economic_loss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Economic_loss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Flood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Flood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Great_Britain_and_Ireland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Great_Britain_and_Ireland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Haiti -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Haiti">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Haiti"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Indonesia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Indonesia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Iran_Air_Flight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Iran_Air_Flight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Iran_Ilyushin_Il-76_crash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Iran_Ilyushin_Il-76_crash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Japan_Airlines_Flight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Japan_Airlines_Flight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Korean_Air_Lines_Flight_007_Sea_of_Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Korean_Air_Lines_Flight_007_Sea_of_Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Malaysia_Airlines_Flight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Malaysia_Airlines_Flight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#New_Zealand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#New_Zealand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#New_Zealand"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Pakistan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Pakistan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Pakistan"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Poland -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Poland">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+        <has_disaster_location rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Poland"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Saudia_Flight_163_Riyadh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Saudia_Flight_163_Riyadh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Sea_surface_temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Sea_surface_temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#South_Korea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#South_Korea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Temperature -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Temperature">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Tenerife_airport_disaster -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Tenerife_airport_disaster">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Thailand -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Thailand">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1556_Shaanxi_earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1556_Shaanxi_earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+        <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-23"/>
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-05-21"/>
+        <has_latitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">10.1</has_latitude>
+        <has_longitude rdf:datatype="http://www.w3.org/2001/XMLSchema#double">11.1</has_longitude>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1839_Coringa_cyclone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1839_Coringa_cyclone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+        <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-17"/>
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1881_Haiphong_typhoon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1881_Haiphong_typhoon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1887_Yellow_River_flood -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1887_Yellow_River_flood">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1920_Haiyuan_earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1920_Haiyuan_earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1931_Yangtze_River_floods -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1931_Yangtze_River_floods">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1970_Bhola_cyclone -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1970_Bhola_cyclone">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1976_Tangshan_earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_1976_Tangshan_earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_2004_Indian_Ocean_earthquake_and_tsunami -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_2004_Indian_Ocean_earthquake_and_tsunami">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_2010_Haiti_earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_2010_Haiti_earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_A.D._1138_Aleppo_earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_A.D._1138_Aleppo_earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_A.D._526_Antioch_earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#The_A.D._526_Antioch_earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Tornadoes_and_Severe_Storms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Tornadoes_and_Severe_Storms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Tsunamis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Tsunamis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Turkish_Airlines_Flight -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Turkish_Airlines_Flight">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Wildfires -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Wildfires">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Winter_and_ice_storms -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Winter_and_ice_storms">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#damages_to_constructions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#damages_to_constructions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#damages_to_roads -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#damages_to_roads">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#danger_of_death -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#danger_of_death">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#distruction_for_power_distribution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#distruction_for_power_distribution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#distruption_of_crops_and_forests -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#distruption_of_crops_and_forests">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#earthquake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#earthquake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#elevation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#elevation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#heatwave -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#heatwave">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Natural_Disaster_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#irrigation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#irrigation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#latitude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#latitude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#long_term_atmospheric_circulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#long_term_atmospheric_circulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#loss_of_plants_especially_roots -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#loss_of_plants_especially_roots">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#mountains -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#mountains">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#ocean_circulation_patterns -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#ocean_circulation_patterns">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#other_surface_features -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#other_surface_features">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#poverty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#poverty">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#rainfall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#rainfall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#relative_humidity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#relative_humidity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#the_Philippines -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#the_Philippines">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#the_United_States -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#the_United_States">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#water_pollution -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#water_pollution">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Impact_Type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#wind_speed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#wind_speed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#Climate_Parameter"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-05-21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-05-21">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-05-21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-11 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-11">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-11"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-21">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-22">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-22"/>
+        <disaster_start rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp"></disaster_start>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-23">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-23"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-25 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-25">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-06-25"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-07-21 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-07-21">
+        <has_incident_start rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2017-07-21"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-08-22 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-08-22">
+        <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-08-22"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-17 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-17">
+        <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-17"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-23 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-23">
+        <has_incident_end rdf:resource="http://www.semanticweb.org/weapon/ontologies/2021/11/crisis.com#2018-09-23"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
